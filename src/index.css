@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *, .dark, .dark *));
+
+:root {
+  --bg-canvas: #F4F7F6;
+  --surface-primary: #FFFFFF;
+  --surface-secondary: #EAF0EF;
+  --border-main: #D7E1DF;
+  --text-primary: #17211F;
+  --text-muted: #64716E;
+  
+  --teal-primary: #087F73;
+  --teal-hover: #05665E;
+  --teal-subtle: #E8F5F3;
+  --teal-border: #BCE2DC;
+
+  --color-warning: #B86A00;
+  --color-warning-subtle: #FFF8EB;
+  --color-warning-border: #FDE7BA;
+
+  --color-danger: #C43D55;
+  --color-danger-subtle: #FDF2F4;
+  --color-danger-border: #F9CAD2;
+
+  --color-success: #087F5B;
+  --color-success-subtle: #E8F7F1;
+  --color-success-border: #B6E8D4;
+}
+
+.dark, [data-theme="dark"], html.dark {
+  --bg-canvas: #020617;
+  --surface-primary: #0F172A;
+  --surface-secondary: #111827;
+  --border-main: #1E293B;
+  --text-primary: #E7EFED;
+  --text-muted: #94A3A0;
+  
+  --teal-primary: #14B8A6;
+  --teal-hover: #2DD4BF;
+  --teal-subtle: rgba(20, 184, 166, 0.12);
+  --teal-border: rgba(20, 184, 166, 0.35);
+
+  --color-warning: #F59E0B;
+  --color-warning-subtle: rgba(245, 158, 11, 0.12);
+  --color-warning-border: rgba(245, 158, 11, 0.35);
+
+  --color-danger: #F43F5E;
+  --color-danger-subtle: rgba(244, 63, 94, 0.12);
+  --color-danger-border: rgba(244, 63, 94, 0.35);
+
+  --color-success: #10B981;
+  --color-success-subtle: rgba(16, 185, 129, 0.12);
+  --color-success-border: rgba(16, 185, 129, 0.35);
+}
+
+body {
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}

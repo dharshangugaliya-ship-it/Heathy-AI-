@@ -1,0 +1,6 @@
+{
+  "name": "AegisHealth AI - Clinical Intelligence & Decision Support",
+  "description": "AI-powered clinical analytics, medical document summarization, appointment triage prioritization, longitudinal health record analysis, and medical image decision support for healthcare professionals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
